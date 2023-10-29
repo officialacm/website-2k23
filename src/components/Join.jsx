@@ -3,13 +3,11 @@ import '../styles/join.css'
 export default function Join() {
   return (
     <div className='JoinContainer'>
-        {/* top  */}
 
         <div className="JoinContainerHeadline">
             <h2 className='joinHeadline'>What are the peark of joining?</h2>
         </div>
 
-            {/* middle  */}
         <div className="JoinContainerBox">
                <div className="JoinBox1">
                     <div className="joinboxBadge">1</div>

@@ -1,91 +1,102 @@
-.JoinContainer{
-    height: 600px;
+.JoinContainer {
+    height: auto;
     width: 100%;
     margin-top: 15px;
-    @media (max-width: 420px) {
-       
-        margin-top: 3px;
-        }
+
+    @media (max-width: 600px) {
+        margin-top: 15em;
+    }
 }
-.joinHeadline{
+
+.joinHeadline {
     margin-top: 15px;
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 2em;
     margin-left: 20px;
+
     @media (max-width: 420px) {
-       
         font-size: 20px;
-        }
+    }
 }
 
-.JoinContainerBox{
+.JoinContainerBox {
     display: flex;
-
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    
+    flex-wrap: wrap;
+
 }
-.JoinBox1{
- margin: 10px 10px;
-    height: 200px;
+
+.JoinBox1 {
+    margin: 10px 10px;
+    height: fit-content;
     width: 450px;
     border: 2px solid rgb(157, 207, 248);
     border-radius: 20px;
-    overflow: auto;
+
     @media (max-width: 420px) {
         height: 150px;
-       }
+    }
 }
 
-.joinboxBadge{
+.joinboxBadge {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 32px;
     width: 32px;
     border-radius: 50%;
-   color: white;
-   font-weight: bold;
-   
+    color: white;
+    font-weight: bold;
+
     background-color: blue;
     margin-top: 17px;
     margin-left: 20px;
+
     @media (max-width: 420px) {
         height: 15px;
         width: 15px;
         margin-top: 8px;
         font-weight: normal;
         font-size: 10px;
-       }
+    }
 }
 
-.joinBoxText{
+.joinBoxText {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 15px 12px;
     padding: 10px;
+
     @media (max-width: 740px) {
-       font-size: 7px;
-       margin-top: 8px;
-      }
+        font-size: 7px;
+        margin-top: 8px;
+    }
+
     @media (max-width: 420px) {
-       font-size: 5px;
-       margin-top: 5px;
-      }
-  
-  
+        font-size: 5px;
+        margin-top: 5px;
+    }
+
+
 }
-.JoinContainerButton{
+
+.JoinContainerButton {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-   
+
 }
-.btn ,.btn-primary{
+
+.btn,
+.btn-primary {
     @media (max-width: 420px) {
-       height: 35px;
-       width: 50px;
-       font-size: 8px;
-       }
+        height: 35px;
+        width: 50px;
+        font-size: 8px;
+    }
 }

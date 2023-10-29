@@ -1,11 +1,11 @@
 import "../styles/about.css"
 import { Instagram, GitHub, YouTube, Twitter, LinkedIn, Facebook } from '@mui/icons-material'
+import aboutPageImg from "../Assets/Images/AboutPageImg.png"
 
 export default function About() {
   return (
     <div className='aboutContainer'>
       <div className="aboutTop">
-
         <h1 className="topText">About Us</h1>
       </div>
       <div className="aboutmiddle">
@@ -31,8 +31,9 @@ export default function About() {
           <button type="button" id='Button' class="btn btn-light" style={{ backgroundColor: "#c7cdd2", marginLeft: "15px", marginTop: "8px" }}>Learn More..</button>
         </div>
         <div className="middleRight">
+          <img src={aboutPageImg} className="abotSecimg" alt="" />
 
-          <div className="middlescrollbar">
+          {/* <div className="middlescrollbar">
 
 
             <div id="carouselExampleIndicators" class="carousel slide">
@@ -52,22 +53,13 @@ export default function About() {
                   <img src="/Assets1/Images/sliderImg.jpeg" className="d-block w-100" alt="..." style={{ height: "330px", objectFit: "cover" }} />
                 </div>
               </div>
+            </div> 
 
-
-            </div>
-          </div>
-
+          </div> */}
 
         </div>
 
-
       </div>
-      <div className="aboutBottom">
-
-
-      </div>
-
-
     </div>
   )
 }
