@@ -33,30 +33,6 @@ export default function About() {
         <div className="middleRight">
           <img src={aboutPageImg} className="abotSecimg" alt="" />
 
-          {/* <div className="middlescrollbar">
-
-
-            <div id="carouselExampleIndicators" class="carousel slide">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img src="/Assets1/Images/sliderImg.jpeg" className="d-block w-100" alt="..." style={{ height: "330px", objectFit: "cover" }} />
-                </div>
-                <div className="carousel-item">
-                  <img src="/Assets1/Images/sliderImg.jpeg" className="d-block w-100" alt="..." style={{ height: "330px", objectFit: "cover" }} />
-                </div>
-                <div className="carousel-item">
-                  <img src="/Assets1/Images/sliderImg.jpeg" className="d-block w-100" alt="..." style={{ height: "330px", objectFit: "cover" }} />
-                </div>
-              </div>
-            </div> 
-
-          </div> */}
-
         </div>
 
       </div>

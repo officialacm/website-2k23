@@ -11,6 +11,7 @@
     user-select: none;
     background: rgba(255, 255, 255, 0.755);
     backdrop-filter: blur(10px);
+    z-index: 99;
 }
 
 #navbar a {
@@ -40,19 +41,21 @@
     align-items: center;
 }
 
-#navbar .joinBtn:active {
+.joinBtn:active {
     transform: scale(0.95);
 }
 
-#navbar .joinBtn:hover {
+.joinBtn:hover {
     background: #0094ced0;
 }
 
-#navbar .joinBtn {
+.joinBtn {
     color: white;
     border-radius: 8px;
     background: #0092CE;
     padding: 0.3em 0.8em;
+    user-select: none;
+    cursor: pointer;
 }
 
 #navbar .BurgerIcon>img {
@@ -119,15 +122,15 @@
     transition: 0.5s;
 }
 
-#BurgerMenuLinks .joinBtn:active {
+.joinBtn:active {
     transform: scale(0.95);
 }
 
-#BurgerMenuLinks .joinBtn:hover {
+.joinBtn:hover {
     background: #0094ced0;
 }
 
-#BurgerMenuLinks .joinBtn {
+.joinBtn {
     color: white;
     border-radius: 8px;
     background: #0092CE;
