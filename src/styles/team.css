@@ -1,0 +1,62 @@
+#Team {
+    display: block;
+    margin-bottom: 2em;
+    text-align: center;
+    z-index: 1;
+}
+
+.Teammembercards {
+    width: 93% ;
+    margin-left: 5%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.Teammembercard {
+    background: #0092CE;
+    position: relative;
+    min-width: 22em;
+    border-radius: 0.8em;
+    margin: 2em 0;
+
+}
+
+.Teammembercard .profileImg {
+    position: absolute;
+    max-height: 77%;
+    margin-top: 5%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    transform: translate(-45%) rotate(45deg);
+    border-radius: 1em;
+}
+
+.Teammembercard .profileImg img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    aspect-ratio: 1;
+    transform: rotate(-45deg) scale(1.5);
+}
+
+.Teammembercard .memberinfo {
+    padding: 1.5em 1.5em 1.5em 30%;
+    color: #fbfbfb;
+}
+.Teammembercard .memberinfo .name {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+.Teammembercard .memberinfo .MemberSocialLinks {
+    display: flex;
+    gap: 0.5em;
+    width: 100%;
+    margin-top: 1em;
+}
+.Teammembercard .memberinfo .MemberSocialLinks span a img {
+    max-height: 1em;
+    aspect-ratio: 1;
+}

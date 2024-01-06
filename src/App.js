@@ -5,6 +5,7 @@ import Testimonials from "./components/Testimonials";
 import About from "./components/About"
 import Join from "./components/Join"
 import "./styles/App.css"
+import Team from "./components/Team";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Join />
       <Events />
+      <Team />
       <Gallery />
       <Testimonials />
     </div>
