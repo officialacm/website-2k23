@@ -1,0 +1,29 @@
+#TeamPage {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#TeamPage .teamMemberCards {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#TeamPage .teamMemberCards .teamsection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7%;
+    padding: 4% 0 1% 7%;
+    margin-bottom: 3%;
+    border-bottom: 2px solid rgb(131, 131, 237);
+    position: relative;
+    justify-content: center;
+}
+
+#TeamPage .teamMemberCards .teamsection>span {
+    position: absolute;
+    top: 0;
+    left: 2em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
