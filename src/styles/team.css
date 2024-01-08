@@ -19,6 +19,7 @@
     background: #0092CE;
     position: relative;
     min-width: 22em;
+    max-width: 32em;
     border-radius: 0.8em;
     margin: 2em 0;
 
@@ -26,11 +27,10 @@
 
 .Teammembercard .profileImg {
     position: absolute;
-    max-height: 77%;
-    margin-top: 5%;
+    max-height: 100%;
     aspect-ratio: 1;
     overflow: hidden;
-    transform: translate(-45%) rotate(45deg);
+    transform: translate(-45%) rotate(45deg) scale(0.755);
     border-radius: 1em;
 }
 
