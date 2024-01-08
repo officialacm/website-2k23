@@ -6,11 +6,12 @@ import About from "./components/About"
 import Join from "./components/Join"
 import "./styles/App.css"
 import Team from "./components/Team";
+import homePagePoster from "./Assets/posters/homePagePoster.png"
 
 function App() {
   return (
     <div id="App">
-      <AppHero />
+      <AppHero poster={homePagePoster} />
       <About />
       <Join />
       <Events />

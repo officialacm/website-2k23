@@ -9,19 +9,4 @@
     flex-direction: column;
 }
 
-#AppHero {
-    max-height: 100vh;
-    width: min(1200px, 100vw);
-    background: url(../Assets/Images/mainHeroBg.png);
-    /* background-color: black; */
-    aspect-ratio: 1472/815;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-inline: auto;
-    margin-top: 5em;
-    max-width: 100vw;
-    overflow: hidden;
-}
-
 @media only screen and (max-width: 600px) {}
