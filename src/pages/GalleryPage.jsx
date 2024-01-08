@@ -25,7 +25,7 @@ function GalleryPage() {
   const activeColor = "#0092CE"
 
   const getRandomWidth = () => {
-    const minWidth = 15
+    const minWidth = 20
     const maxWidth = 35
     return `${Math.floor(Math.random() * (maxWidth - minWidth + 1) + minWidth)}em`;
   };
@@ -79,9 +79,9 @@ function GalleryPage() {
         </div>'
       </div> */}
 
-      <div className="image-grid">
+      <div className="galleryPageImages">
         {imagePaths.map((path, index) => (
-          <div key={index} className="image-container" style={{ width: getRandomWidth() }}>
+          <div key={index} className="galleryPageImage" style={{ width: getRandomWidth() }}>
             <img src={path} alt={`galleryimg ${index}`} />
           </div>
         ))}

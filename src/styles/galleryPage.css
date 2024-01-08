@@ -27,33 +27,33 @@
 
 /* ImageGridComponent.css */
 
-.image-grid {
+.galleryPageImages {
     display: flex;
+    margin: 2em 0;
     flex-wrap: wrap;
-    gap: 2em;
     gap: 16px;
     justify-content: center;
     margin-inline: auto;
     max-width: min(1400px, 95vw);
 }
 
-.image-container {
+.galleryPageImage {
     position: relative;
     overflow: hidden;
 }
 
-.image-container img {
+.galleryPageImage img {
     transition: 0.5s;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
-    aspect-ratio: 1.66;
+    aspect-ratio: 1.7;
     border-radius: 1em;
     border: none;
     opacity: 1;
 }
 
-.image-container img:hover {
+.galleryPageImage img:hover {
     opacity: 0.8;
 }
