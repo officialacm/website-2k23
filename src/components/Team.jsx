@@ -7,6 +7,40 @@ import githubIcon from "../Assets/Icons/github.png"
 import atharv_pande from "../Assets/Members/atharv_pande.png"
 import { Link } from 'react-router-dom'
 
+const teamData = [
+  {
+    name: "Atharv Pande",
+    position: "position",
+    profilePic: atharv_pande,
+    github: "#",
+    linkedin: "#",
+    instagram: "#",
+  },
+  {
+    name: "Atharv Pande",
+    position: "position",
+    profilePic: atharv_pande,
+    github: "#",
+    linkedin: "#",
+    instagram: "#",
+  },
+  {
+    name: "Atharv Pande",
+    position: "position",
+    profilePic: atharv_pande,
+    github: "#",
+    linkedin: "#",
+    instagram: "#",
+  },
+  {
+    name: "Atharv Pande",
+    position: "position",
+    profilePic: atharv_pande,
+    github: "#",
+    linkedin: "#",
+    instagram: "#",
+  },
+]
 
 export function TeamMemberCard(props) {
   return <div className='Teammembercard'>
@@ -17,13 +51,13 @@ export function TeamMemberCard(props) {
       <p className='name'>{props.name}</p>
       <p className='position'>{props.position}</p>
       <div className='MemberSocialLinks'>
-        <Link to="#" >
+        <Link to={props.linkedin} >
           <img className='MemberSocialLinkicon' src={linkedInIcon} alt='logo' />
         </Link>
-        <Link to="#" >
+        <Link  to={props.instagram}>
           <img className='MemberSocialLinkicon' src={instaIcon} alt='logo' />
         </Link>
-        <Link to="#" >
+        <Link to={props.github} >
           <img className='MemberSocialLinkicon' src={githubIcon} alt='logo' />
         </Link>
       </div>
@@ -38,12 +72,15 @@ function Team() {
     <div id='Team'>
       <h1>Team</h1>
       <div className='Teammembercards'>
-        <TeamMemberCard name="Atharv Pande" position="position" profileImg={atharv_pande} />
-        <TeamMemberCard name="Atharv Pande" position="position" profileImg={atharv_pande} />
-        <TeamMemberCard name="Atharv Pande" position="position" profileImg={atharv_pande} />
-        <TeamMemberCard name="Atharv Pande" position="position" profileImg={atharv_pande} />
-        <TeamMemberCard name="Atharv Pande" position="position" profileImg={atharv_pande} />
-        <TeamMemberCard name="Atharv Pande" position="position" profileImg={atharv_pande} />
+        {teamData.map((member) => {
+          return <TeamMemberCard 
+          instagram={member.instagram}
+          github={member.github}
+          linkedin={member.linkedin}
+          name={member.name} 
+          position={member.position} 
+          profileImg={member.profilePic} />
+        })}
       </div>
     </div>
   )

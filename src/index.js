@@ -13,7 +13,7 @@ import eventPagePoster from "./Assets/posters/eventPagePoster.png"
 import galleryPagePoster from "./Assets/posters/galleryPagePoster.png"
 import AppHero from './components/AppHero';
 import TeamPage from './pages/TeamPage';
-import AboutPage from './pages/AboutPage';
+// import AboutPage from './pages/AboutPage';
 import EventPage from './pages/EventPage';
 import GalleryPage from './pages/GalleryPage';
 
@@ -30,13 +30,6 @@ const router = createBrowserRouter([
     element: <DefaultPage>
       <AppHero poster={teamPagePoster} />
       <TeamPage />
-    </DefaultPage>,
-  },
-  {
-    path: "/about",
-    element: <DefaultPage>
-      <AppHero poster={teamPagePoster} />
-      <AboutPage />
     </DefaultPage>,
   },
   {
