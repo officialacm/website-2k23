@@ -4,18 +4,69 @@ import poster from "../Assets/galleryImages/image1.png"
 
 
 const imagePaths = [
-  poster,
-  poster,
-  poster,
-  poster,
-  poster,
-  poster,
-  poster,
-  poster,
-  poster,
-  poster,
-  poster,
-  poster,
+  {
+    posterImage: poster,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  },
+  {
+    posterImage: poster,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  },
+  {
+    posterImage: poster,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  },
+  {
+    posterImage: poster,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  },
+  {
+    posterImage: poster,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  },
+  {
+    posterImage: poster,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  },
+  {
+    posterImage: poster,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  }
 ]
 
 
@@ -73,16 +124,10 @@ function GalleryPage() {
 
       {/* display gallery images */}
 
-      {/* <div className='galleryPageImages'>
-        <div className='galleryPageImage'>
-          <img src="" alt="" />
-        </div>'
-      </div> */}
-
       <div className="galleryPageImages">
-        {imagePaths.map((path, index) => (
+        {imagePaths.map((poster, index) => (
           <div key={index} className="galleryPageImage" style={{ width: getRandomWidth() }}>
-            <img src={path} alt={`galleryimg ${index}`} />
+            <img src={poster.posterImage} alt={`galleryimg ${index}`} />
           </div>
         ))}
       </div>
