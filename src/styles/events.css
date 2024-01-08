@@ -2,6 +2,7 @@
 
 #EventPage {
     text-align: center;
+    margin: 5em 0;
 }
 
 #EventPage .eventPageHeader {
@@ -87,6 +88,7 @@
     margin-inline: auto;
     overflow: auto;
     margin-top: 3em;
+    padding: 2em 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
