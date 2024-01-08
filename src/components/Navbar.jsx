@@ -3,6 +3,7 @@ import "../styles/navbar.css"
 import clublogo from '../Assets/Icons/clubLogo.png'
 import BurgermenuIcon from "../Assets/Icons/burgerMenuIcon.png"
 import closeicon from "../Assets/Icons/closeIcon.png"
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
 
@@ -14,13 +15,15 @@ export default function Navbar() {
 
     return (<>
         <div id="navbar">
-            <img src={clublogo} alt="club icon" />
+            <Link to={"/"}>
+                <img src={clublogo} alt="club icon" />
+            </Link>
             <div className='navlinks'>
-                <span>About</span>
-                <span>Event</span>
-                <span>gallery</span>
-                <span>Team</span>
-                <span className='joinBtn'>Join now</span>
+                <Link to="/about" >About</Link>
+                <Link to="/event" >Event</Link>
+                <Link to="/gallery" >gallery</Link>
+                <Link to="/team" >Team</Link>
+                <Link to="#" className='joinBtn'>Join now</Link>
             </div>
             <div id='BurgerMenu'>
                 <div className='BurgerIcon' onClick={toggleBurgerMenu}>

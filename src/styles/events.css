@@ -1,3 +1,70 @@
+/* event page styles */
+
+#EventPage {
+    text-align: center;
+    margin: 5em 0;
+}
+
+#EventPage .eventPageHeader {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    justify-content: space-between;
+}
+
+#EventPage .eventPageHeader button:hover {
+    background-color: #6cc3e8;
+}
+
+#EventPage .eventPageHeader button {
+    transition: 0.2s;
+    background-color: #71CDF4;
+    margin-left: 0.6em;
+    border-radius: 0.5em;
+    user-select: none;
+    cursor: pointer;
+}
+
+#EventPage .eventPageHeader #searchEvent:focus {
+    outline: none;
+    border-bottom: 2px solid #252525d5;
+}
+
+#EventPage .eventPageHeader button,
+#EventPage .eventPageHeader #searchEvent {
+    border-radius: 0.5em;
+    padding: 0.6em .9em;
+    outline: none;
+    border: none;
+}
+
+#EventPage .eventPageHeader #searchEvent {
+    border-bottom: 1px solid #252525d5;
+}
+
+#EventPage .eventPageHeader .moveBtns {
+    display: flex;
+    gap: 2em;
+}
+
+#EventPage .eventPageHeader .moveBtns div:hover {
+    scale: 1.1;
+}
+
+#EventPage .eventPageHeader .moveBtns div {
+    transition: 0.2s;
+    padding: 0.3em 0.8em;
+    border-radius: 0.5em;
+    user-select: none;
+    cursor: pointer;
+    background-color: #0092CE;
+    color: white;
+}
+
+
+/* event page component styles */
+
 #events-section a {
     text-decoration: none;
     color: rgb(83, 83, 233);
@@ -15,11 +82,13 @@
     padding: 1em;
 }
 
+.eventInfoGrid,
 #events-section #eventGrid {
     max-width: min(1100px, 95%);
     margin-inline: auto;
     overflow: auto;
     margin-top: 3em;
+    padding: 2em 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -27,20 +96,24 @@
     color: #222;
 }
 
+.eventInfoGrid .EventCardStackContainer:hover,
 #events-section #eventGrid .EventCardStackContainer:hover {
     border-top: 3px solid rgb(75, 75, 223);
 }
 
+.eventInfoGrid .EventCardStackContainer>*,
 #events-section #eventGrid .EventCardStackContainer>* {
     min-width: 100%;
 }
 
+.eventInfoGrid .EventCardStackContainer .EventCardStack,
 #events-section #eventGrid .EventCardStackContainer .EventCardStack {
     width: 100%;
     aspect-ratio: 0.5;
     display: flex;
 }
 
+.eventInfoGrid .EventCardStackContainer,
 #events-section #eventGrid .EventCardStackContainer {
     display: flex;
     flex-direction: column;
@@ -50,10 +123,12 @@
     transition: 0.1s;
 }
 
+.eventInfoGrid .EventCardStackContainer .EventcardStackHeader,
 #events-section #eventGrid .EventCardStackContainer .EventcardStackHeader {
     border: 0.5px solid #b5b5b5;
 }
 
+.eventInfoGrid .EventCardStackContainer .EventcardStackHeader,
 #events-section #eventGrid .EventCardStackContainer .EventcardStackHeader {
     text-align: left;
     padding: 1.5em 3em 1em 3em;
@@ -63,19 +138,23 @@
     gap: 0.5em;
 }
 
+.eventInfoGrid .EventCardStackContainer .EventcardStackHeader p,
 #events-section #eventGrid .EventCardStackContainer .EventcardStackHeader p {
     opacity: 0.5;
 }
 
+.eventInfoGrid .EventCardStackContainer .EventCardStack .EventCardStackImageCard,
 #events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackImageCard {
     width: 100%;
 }
 
+.eventInfoGrid .EventCardStackContainer .EventCardStack .EventCardStackImageCard img,
 #events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackImageCard img {
     max-width: 290px;
     width: 100%
 }
 
+.eventInfoGrid .EventCardStackContainer .EventCardStack .EventCardStackDetailsCard,
 #events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackDetailsCard {
     padding: 2em;
     text-align: center;
@@ -85,6 +164,7 @@
     aspect-ratio: 0.90;
 }
 
+.eventInfoGrid .EventCardStackContainer .EventCardStack .EventCardStackDetailsCard .formLink:hover,
 #events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackDetailsCard .formLink:hover {
     animation: slideRightAnimation 0.6s ease 1;
 }
