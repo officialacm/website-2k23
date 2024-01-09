@@ -1,12 +1,17 @@
 import React from 'react'
 import "../styles/events.css"
 import codeQuestImg from "../Assets/eventPosters/codeQuest.png"
+import event_1 from "../Assets/eventPosters/event_1.png"
+import event_2 from "../Assets/eventPosters/event_2.png"
+import event_8 from "../Assets/eventPosters/event_8.png"
+import event_6 from "../Assets/eventPosters/event_6.png"
+import event_7 from "../Assets/eventPosters/event_7.png"
 
 const eventData = [
   {
     date: "january 15",
     time: "9:15 AM",
-    image: codeQuestImg,
+    image: event_1,
     eventDesc: [
       "Event Coordinators",
       "Event Coordinators",
@@ -17,7 +22,7 @@ const eventData = [
   {
     date: "january 15",
     time: "9:15 AM",
-    image: codeQuestImg,
+    image: event_6,
     eventDesc: [
       "Event Coordinators",
       "Event Coordinators",
@@ -28,7 +33,7 @@ const eventData = [
   {
     date: "january 15",
     time: "9:15 AM",
-    image: codeQuestImg,
+    image: event_1,
     eventDesc: [
       "Event Coordinators",
       "Event Coordinators",
@@ -39,7 +44,7 @@ const eventData = [
   {
     date: "january 15",
     time: "9:15 AM",
-    image: codeQuestImg,
+    image: event_8,
     eventDesc: [
       "Event Coordinators",
       "Event Coordinators",
@@ -50,7 +55,7 @@ const eventData = [
   {
     date: "january 15",
     time: "9:15 AM",
-    image: codeQuestImg,
+    image: event_7,
     eventDesc: [
       "Event Coordinators",
       "Event Coordinators",
