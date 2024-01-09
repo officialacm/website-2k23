@@ -14,7 +14,9 @@ export default function About() {
             <h3 className='setion1Headline'>What'S ACM?</h3>
           </div>
           <div className="section2">
-            <p className='section2Para'>Lor ipsum dolor sit amet consectetur adipisicing elit. Placeat dolores vitae, ad a deleniti voluptate officia obcaecati et! Distinctio necessitatibus iure, voluptatem eaque totam doloribus vel dolores consequuntur in maxime laudantium fuga. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, ratione maiores optio sit recusandae accusantium dolorum consequuntur nisi molestias quis?</p>
+            <p className='section2Para'>
+Welcome to our ACM Student Chapter, a dynamic community of passionate students dedicated to the field of computer science and technology. We are committed to fostering an environment where like-minded individuals can come together to learn, collaborate, and innovate.
+Our Mission: Our mission is to promote and advance computer science education, research, and innovation within our university community and beyond.</p>
           </div>
           <div className="section3">
             <div className="section3Items">

@@ -22,7 +22,6 @@
     max-width: 32em;
     border-radius: 0.8em;
     margin: 2em 0;
-
 }
 
 .Teammembercard .profileImg {
@@ -30,7 +29,7 @@
     max-height: 100%;
     aspect-ratio: 1;
     overflow: hidden;
-    transform: translate(-45%) rotate(45deg) scale(0.755);
+    transform: translate(-45%) rotate(45deg) scale(0.900);
     border-radius: 1em;
 }
 

@@ -5,37 +5,42 @@ import linkedInIcon from "../Assets/Icons/linkedIn.png"
 import instaIcon from "../Assets/Icons/Insta.png"
 import githubIcon from "../Assets/Icons/github.png"
 import atharv_pande from "../Assets/Members/atharv_pande.png"
+import divyanshi_rahate from "../Assets/Members/divyanshi_rahate.png"
+import nikita_birajdar from "../Assets/Members/nikita_birajdar.png"
+import anushka_dixit from "../Assets/Members/anushka_dixit.png"
+import rugved_shitole from "../Assets/Members/rugved_shitole.png"
+
 import { Link } from 'react-router-dom'
 
 const teamData = [
   {
-    name: "Atharv Pande",
-    position: "position",
-    profilePic: atharv_pande,
+    name: "Nikita Birajdar",
+    position: "President",
+    profilePic: nikita_birajdar,
     github: "#",
     linkedin: "#",
     instagram: "#",
   },
   {
-    name: "Atharv Pande",
-    position: "position",
-    profilePic: atharv_pande,
+    name: "Rugved Shitole",
+    position: "Vice President",
+    profilePic: rugved_shitole,
     github: "#",
     linkedin: "#",
     instagram: "#",
   },
   {
-    name: "Atharv Pande",
-    position: "position",
-    profilePic: atharv_pande,
+    name: "Divyanshi Rahate",
+    position: "Vice President",
+    profilePic: divyanshi_rahate,
     github: "#",
     linkedin: "#",
     instagram: "#",
   },
   {
-    name: "Atharv Pande",
-    position: "position",
-    profilePic: atharv_pande,
+    name: "Anushka Dixit",
+    position: "Secretary",
+    profilePic: anushka_dixit,
     github: "#",
     linkedin: "#",
     instagram: "#",

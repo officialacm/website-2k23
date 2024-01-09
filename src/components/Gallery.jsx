@@ -1,30 +1,21 @@
 import React from 'react'
 import "../styles/gallery.css"
 import image1 from "../Assets/galleryImages/image1.png"
+import event_1 from "../Assets/galleryImages/event_1.png"
+import event_8 from "../Assets/galleryImages/event_8.png"
+import event_6 from "../Assets/galleryImages/event_6.png"
 
 export default function gallery() {
 
     let galleryImages = [
         image1,
+        event_1,
+        event_8,
+        event_6,
         image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
+        event_1,
+
+       
     ]
 
     function renderAllImages() {
