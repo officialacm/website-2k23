@@ -3,33 +3,42 @@
     margin-bottom: 2em;
     text-align: center;
     z-index: 1;
+    padding: 2em 0;
+}
+
+#Team h1 {
+    margin-bottom: 2em;
 }
 
 .Teammembercards {
-    width: 93% ;
+    width: 95%;
     margin-left: 5%;
     text-align: left;
     display: flex;
     flex-wrap: wrap;
-    gap: 10%;
+    gap: 7%;
     justify-content: center;
     align-items: center;
 }
+
 .Teammembercard {
     background: #0092CE;
     position: relative;
-    min-width: 22em;
-    max-width: 32em;
+    min-width: min(24em, 70%);
+    max-width: max-content;
     border-radius: 0.8em;
     margin: 2em 0;
+
 }
 
 .Teammembercard .profileImg {
     position: absolute;
     max-height: 100%;
     aspect-ratio: 1;
+    top: 50%;
     overflow: hidden;
-    transform: translate(-45%) rotate(45deg) scale(0.900);
+    background-color: #24242456;
+    transform: translateX(-45%) translateY(-50%) rotate(45deg) scale(1.1);
     border-radius: 1em;
 }
 
@@ -45,16 +54,19 @@
     padding: 1.5em 1.5em 1.5em 30%;
     color: #fbfbfb;
 }
+
 .Teammembercard .memberinfo .name {
     font-weight: bold;
     font-size: 1.8em;
 }
+
 .Teammembercard .memberinfo .MemberSocialLinks {
     display: flex;
     gap: 0.5em;
     width: 100%;
     margin-top: 1em;
 }
+
 .Teammembercard .memberinfo .MemberSocialLinks span a img {
     max-height: 1em;
     aspect-ratio: 1;
