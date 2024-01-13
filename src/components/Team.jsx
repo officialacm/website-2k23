@@ -9,9 +9,27 @@ import divyanshi_rahate from "../Assets/Members/divyanshi_rahate.png"
 import nikita_birajdar from "../Assets/Members/nikita_birajdar.png"
 import anushka_dixit from "../Assets/Members/anushka_dixit.png"
 import rugved_shitole from "../Assets/Members/rugved_shitole.png"
+import ketaki_bhoyar from "../Assets/Members/ketaki_bhoyar.png"
+import priyadarshini_doke from "../Assets/Members/priyadarshini_doke.png"
 import { Link } from 'react-router-dom'
 
 const teamData = [
+  {
+    name: "Ms.Ketaki Bhoyar ",
+    position: "HOD Computer",
+    profilePic: ketaki_bhoyar,
+    github: "#",
+    linkedin: "#",
+    instagram: "#",
+  },
+  {
+    name: "Mrs. Priyadarshini Doke",
+    position: "Faculty Sponsor",
+    profilePic: priyadarshini_doke,
+    github: "#",
+    linkedin: "#",
+    instagram: "#",
+  },
   {
     name: "Nikita Birajdar",
     position: "President",

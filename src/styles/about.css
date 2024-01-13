@@ -72,6 +72,12 @@
     padding: 4px;
 }
 
+.joinBtn {
+    width: max-content;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
 .section3Items {
     display: flex;
     flex-direction: row;

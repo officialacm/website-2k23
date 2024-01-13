@@ -15,13 +15,15 @@
   text-align: center;
 }
 
-#footerBanner .quote{
+#footerBanner .quote {
   font-size: 2em;
 }
-#footerBanner .by{
+
+#footerBanner .by {
   opacity: 0.8;
 }
-#footerBanner .button{
+
+#footerBanner .button {
   background-color: #f3f3f4;
   padding: 0.5em 2em;
   border-radius: 0.5em;
@@ -51,6 +53,21 @@
 #footerContent .links {
   display: flex;
   gap: 3em;
+}
+
+#footerContent .links a {
+  text-decoration: none;
+  color: unset;
+  padding-bottom: 0.2em;
+  padding-inline: 0.3em;
+  transition: border 0.3s;
+  border-bottom: 2px solid #fff;
+  user-select: none;
+  cursor: pointer;
+}
+
+#footerContent .links a:hover {
+  border-bottom: 2px solid #222222c0;
 }
 
 #footerContent .socials {
