@@ -4,12 +4,11 @@ import "../styles/team.css"
 import linkedInIcon from "../Assets/Icons/linkedIn.png"
 import instaIcon from "../Assets/Icons/Insta.png"
 import githubIcon from "../Assets/Icons/github.png"
-import atharv_pande from "../Assets/Members/atharv_pande.png"
+// import atharv_pande from "../Assets/Members/atharv_pande.png"
 import divyanshi_rahate from "../Assets/Members/divyanshi_rahate.png"
 import nikita_birajdar from "../Assets/Members/nikita_birajdar.png"
 import anushka_dixit from "../Assets/Members/anushka_dixit.png"
 import rugved_shitole from "../Assets/Members/rugved_shitole.png"
-
 import { Link } from 'react-router-dom'
 
 const teamData = [
@@ -77,7 +76,7 @@ function Team() {
     <div id='Team'>
       <h1>Team</h1>
       <div className='Teammembercards'>
-        {teamData.map((member) => {
+        {teamData.map((member, index) => {
           return <TeamMemberCard 
           instagram={member.instagram}
           github={member.github}

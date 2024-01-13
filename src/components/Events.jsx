@@ -56,38 +56,49 @@ const eventData = [
 ]
 
 export function EventCardStack() {
+
   let allcards = []
   let thisevent = eventData[1]
+
   for (let i = 0; i < eventData.length; i++) {
+
     thisevent = eventData[i]
+
+    // push cards for each event in allcards array
     allcards.push(<div className='EventCardStackContainer'>
       <div className='EventcardStackHeader'>
+
         <span style={{
           marginInline: "auto",
         }}>
           <h2>{thisevent.date}</h2>
           <p>{thisevent.time}</p>
         </span>
+
       </div>
+
       <div style={{
         flexDirection: i % 2 === 0 ? "column" : "column-reverse",
       }} className='EventCardStack'>
+
         <div className='EventCardStackImageCard'>
           <img src={thisevent.image} alt="" />
         </div>
+
         <div className='EventCardStackDetailsCard'>
           {/* <p className='date'>{thisevent.date}</p> */}
+{/* <p className='date'>{thisevent.eventDesc}</p> */|
           <span>
             {thisevent.eventDesc}
-            {/* .forEach(e => {
-              return <p>{e}</p>
-            })} */}
           </span>
-          <p className='formLink'>
-            {/* <p>The ACM club's technical event featured a challenging second round where participants engaged in a series of MCQs and coding exercises. Attendees showcased their proficiency in both theoretical concepts and practical coding skills, contributing to an intellectually stimulating and competitive atmosphere.</p> */}
-            <a href={thisevent.link}>Form Link {"->"}</a>
-          </p>
+
+          <span className='formLink'>
+            <p>Free</p>
+            <a href={thisevent.link}>Form Link 🔗</a>
+          </span>
+
         </div>
+
       </div>
     </div>)
   }

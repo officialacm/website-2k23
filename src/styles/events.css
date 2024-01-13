@@ -146,27 +146,44 @@
 .eventInfoGrid .EventCardStackContainer .EventCardStack .EventCardStackImageCard,
 #events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackImageCard {
     width: 100%;
+    min-height: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    border-bottom: 1px solid #25252530;
+    border-left: 1px solid #25252530;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .eventInfoGrid .EventCardStackContainer .EventCardStack .EventCardStackImageCard img,
 #events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackImageCard img {
     max-width: 290px;
-    width: 100%
+    width: 100%;
+    aspect-ratio: 0.9;
+    object-fit: cover;
 }
 
 .eventInfoGrid .EventCardStackContainer .EventCardStack .EventCardStackDetailsCard,
 #events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackDetailsCard {
     padding: 2em;
-    text-align: center;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     gap: 1em;
     aspect-ratio: 0.90;
+    border-bottom: 1px solid #25252530;
+    border-left: 1px solid #25252530;
 }
 
+.eventInfoGrid .EventCardStackContainer .EventCardStack .EventCardStackDetailsCard .formLink,
+#events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackDetailsCard .formLink {
+    user-select: none;
+    text-align: center;
+}
 .eventInfoGrid .EventCardStackContainer .EventCardStack .EventCardStackDetailsCard .formLink:hover,
 #events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackDetailsCard .formLink:hover {
-    animation: slideRightAnimation 0.6s ease 1;
+    animation: slideRightAnimation 1s ease 1;
 }
 
 
@@ -176,7 +193,7 @@
     }
 
     50% {
-        transform: translateX(2em);
+        transform: translateX(1em);
     }
 
     to {

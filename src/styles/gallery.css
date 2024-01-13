@@ -11,6 +11,45 @@
     color: white;
 }
 
+/* Firefox */
+#gallery .galleryContainer {
+    scrollbar-width: thin;
+    scrollbar-color: #8676CE #FFFFFF;
+}
+
+/* Chrome, Edge and Safari */
+#gallery .galleryContainer::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+#gallery .galleryContainer::-webkit-scrollbar-track {
+    border-radius: 11px;
+    background-color: #FFFFFF;
+}
+
+#gallery .galleryContainer::-webkit-scrollbar-track:hover {
+    background-color: #DEE8EA;
+}
+
+#gallery .galleryContainer::-webkit-scrollbar-track:active {
+    background-color: #D3D8EE;
+}
+
+#gallery .galleryContainer::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background-color: #8676CE;
+}
+
+#gallery .galleryContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #9684E6;
+}
+
+#gallery .galleryContainer::-webkit-scrollbar-thumb:active {
+    background-color: #9C89EF;
+}
+
+
 #gallery .galleryContainer {
     overflow-x: auto;
     overflow-y: hidden;
@@ -23,6 +62,8 @@
     align-items: flex-start;
 }
 
-#gallery .galleryContainer > div > img {
+#gallery .galleryContainer>div>img {
     width: min(50vw, 450px);
+    aspect-ratio: 1.7;
+    object-fit: cover;
 }

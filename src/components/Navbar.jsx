@@ -23,8 +23,7 @@ export default function Navbar() {
                 <Link to="/about" >About</Link>
                 <Link to="/event" >Event</Link>
                 <Link to="/gallery" >gallery</Link>
-                <Link to="/team" >Team</Link>
-                <Link to="#" className='joinBtn'>Join now</Link>
+                <Link to="/team"  className='joinBtn'>Team</Link>
             </div>
             <div id='BurgerMenu'>
                 <div className='BurgerIcon' onClick={toggleBurgerMenu}>
@@ -43,7 +42,7 @@ export default function Navbar() {
             <Link onClick={toggleBurgerMenu} to="/about" >About</Link>
             <Link onClick={toggleBurgerMenu} to="/event" >Event</Link>
             <Link onClick={toggleBurgerMenu} to="/gallery" >gallery</Link>
-            <Link onClick={toggleBurgerMenu} to="/team" >Team</Link>
+            <Link onClick={toggleBurgerMenu} to="/team" className='joinBtn'>Team</Link>
         </div>
 
     </>

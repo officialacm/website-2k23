@@ -30,14 +30,12 @@ export default function gallery() {
         image_14,
         image_15,
         image_16,
-
-       
     ]
 
     function renderAllImages() {
         let allImagesConponents = []
         for (let i = 0; i < galleryImages.length; i += 2) {
-            allImagesConponents.push(<div>
+            allImagesConponents.push(<div className='imageDuo'>
                 <img src={galleryImages[i]} alt='' />
                 <img src={galleryImages[i + 1]} alt='' />
             </div>)
@@ -47,7 +45,7 @@ export default function gallery() {
     return (
         <div id="gallery">
             <div className='headBar'>
-                <p>Notifications and Updates</p>
+                <p>Memory Wall and Achievements</p>
             </div>
             <div className='galleryContainer'>
                 {renderAllImages()}

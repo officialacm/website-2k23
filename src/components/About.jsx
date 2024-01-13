@@ -15,8 +15,8 @@ export default function About() {
           </div>
           <div className="section2">
             <p className='section2Para'>
-Welcome to our ACM Student Chapter, a dynamic community of passionate students dedicated to the field of computer science and technology. We are committed to fostering an environment where like-minded individuals can come together to learn, collaborate, and innovate.
-Our Mission: Our mission is to promote and advance computer science education, research, and innovation within our university community and beyond.</p>
+              Welcome to our ACM Student Chapter, a dynamic community of passionate students dedicated to the field of computer science and technology. We are committed to fostering an environment where like-minded individuals can come together to learn, collaborate, and innovate.
+              Our Mission: Our mission is to promote and advance computer science education, research, and innovation within our university community and beyond.</p>
           </div>
           <div className="section3">
             <div className="section3Items">
