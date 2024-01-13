@@ -1,11 +1,23 @@
 import React, { useState } from 'react'
 import '../styles/galleryPage.css'
 import poster from "../Assets/galleryImages/image1.png"
-
+import image1 from "../Assets/galleryImages/image1.png"
+import event_1 from "../Assets/galleryImages/event_1.png"
+import event_8 from "../Assets/galleryImages/event_8.png"
+import event_6 from "../Assets/galleryImages/event_6.png"
+import event_2 from "../Assets/galleryImages/event_2.jpg"
+import image_9 from "../Assets/galleryImages/image_9.jpg"
+import image_10 from "../Assets/galleryImages/image_10.jpg"
+import image_11 from "../Assets/galleryImages/image_11.jpg"
+import image_12 from "../Assets/galleryImages/image_12.jpg"
+import image_13 from "../Assets/galleryImages/image_13.jpg"
+import image_14 from "../Assets/galleryImages/image_14.jpg"
+import image_15 from "../Assets/galleryImages/image_15.jpg"
+import image_16 from "../Assets/galleryImages/image_16.jpg"
 
 const imagePaths = [
   {
-    posterImage: poster,
+    posterImage: image1,
     // Technical Events / Social events / Achievements / Team
     posterCategory: "Social events",
     postername: "tech fest",
@@ -14,7 +26,7 @@ const imagePaths = [
     posterAttendees: "150"
   },
   {
-    posterImage: poster,
+    posterImage: event_1,
     // Technical Events / Social events / Achievements / Team
     posterCategory: "Social events",
     postername: "tech fest",
@@ -23,7 +35,7 @@ const imagePaths = [
     posterAttendees: "150"
   },
   {
-    posterImage: poster,
+    posterImage: event_2,
     // Technical Events / Social events / Achievements / Team
     posterCategory: "Social events",
     postername: "tech fest",
@@ -32,7 +44,7 @@ const imagePaths = [
     posterAttendees: "150"
   },
   {
-    posterImage: poster,
+    posterImage: event_6,
     // Technical Events / Social events / Achievements / Team
     posterCategory: "Social events",
     postername: "tech fest",
@@ -41,7 +53,7 @@ const imagePaths = [
     posterAttendees: "150"
   },
   {
-    posterImage: poster,
+    posterImage: event_8,
     // Technical Events / Social events / Achievements / Team
     posterCategory: "Social events",
     postername: "tech fest",
@@ -50,7 +62,7 @@ const imagePaths = [
     posterAttendees: "150"
   },
   {
-    posterImage: poster,
+    posterImage: image_9,
     // Technical Events / Social events / Achievements / Team
     posterCategory: "Social events",
     postername: "tech fest",
@@ -59,7 +71,61 @@ const imagePaths = [
     posterAttendees: "150"
   },
   {
-    posterImage: poster,
+    posterImage: image_10,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  },
+  {
+    posterImage: image_11,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  },
+  {
+    posterImage: image_12,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  },
+  {
+    posterImage: image_13,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  },
+  {
+    posterImage: image_14,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  },
+  {
+    posterImage: image_15,
+    // Technical Events / Social events / Achievements / Team
+    posterCategory: "Social events",
+    postername: "tech fest",
+    posterDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quo similique eveniet at? Ratione iure est culpa nihil quaerat explicabo.",
+    posterDate: "15 Jan",
+    posterAttendees: "150"
+  },
+  {
+    posterImage: image_16,
     // Technical Events / Social events / Achievements / Team
     posterCategory: "Social events",
     postername: "tech fest",
