@@ -11,12 +11,11 @@
 }
 
 .Teammembercards {
-    width: 95%;
-    margin-left: 5%;
+    width: 100%;
+    padding-left: 3em;
     text-align: left;
     display: flex;
     flex-wrap: wrap;
-    gap: 7%;
     justify-content: center;
     align-items: center;
 }
@@ -27,7 +26,7 @@
     min-width: min(24em, 70%);
     max-width: max-content;
     border-radius: 0.8em;
-    margin: 2em 0;
+    margin: 2em 3em;
 
 }
 

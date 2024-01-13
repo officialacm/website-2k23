@@ -23,7 +23,9 @@ const router = createBrowserRouter([
     element: <DefaultPage>
       <App />
     </DefaultPage>,
-    errorElement: <PageNotFound />
+    errorElement: <DefaultPage>
+      <PageNotFound />
+    </DefaultPage>
   },
   {
     path: "/team",

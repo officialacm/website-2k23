@@ -1,6 +1,7 @@
 import "../styles/about.css"
 import { Instagram, GitHub, YouTube, Twitter, LinkedIn, Facebook } from '@mui/icons-material'
 import aboutPageImg from "../Assets/Images/AboutPageImg.png"
+import { Link } from "react-router-dom"
 
 export default function About() {
   return (
@@ -29,8 +30,7 @@ export default function About() {
             </div>
 
           </div>
-          <div className="section4"></div>
-          <button type="button" id='Button' class="btn btn-light" style={{ backgroundColor: "#c7cdd2", marginLeft: "15px", marginTop: "8px" }}>Learn More..</button>
+          <Link to="#" className="joinBtn" >Learn More..</Link>
         </div>
         <div className="middleRight">
           <img src={aboutPageImg} className="abotSecimg" alt="" />

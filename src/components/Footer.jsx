@@ -3,8 +3,9 @@ import React from 'react'
 import clublogo from '../Assets/Icons/clubLogo.png'
 import instaicon from "../Assets/Icons/instagram.png"
 import facebookIcon from "../Assets/Icons/facebook.png"
-import linkedInIcon from "../Assets/Icons/linkedIn.png"
+import linkedInIcon from "../Assets/Icons/linkedinIcon.png"
 import mailIcon from "../Assets/Icons/mail.png"
+import { Link } from "react-router-dom"
 
 function Footer() {
 
@@ -20,16 +21,17 @@ function Footer() {
           <img src={clublogo} alt="" />
         </div>
         <div className="links">
-          <p>About</p>
-          <p>Event</p>
-          <p>gallery</p>
-          <p>Team</p>
+          <Link to="/" >Home</Link>
+          <Link to="/about" >About</Link>
+          <Link to="/event" >Event</Link>
+          <Link to="/gallery" >gallery</Link>
+          <Link to="/team">Team</Link>
         </div>
         <div className="socials">
-          <div><img src={instaicon} alt="instaicon" /></div>
-          <div><img src={facebookIcon} alt="facebookIcon" /></div>
-          <div><img src={linkedInIcon} alt="linkedInIcon" /></div>
-          <div><img src={mailIcon} alt="mailIcon" /></div>
+          <Link to={"#"} ><img src={instaicon} alt="instaicon" /></Link>
+          <Link to={"#"} ><img src={facebookIcon} alt="facebookIcon" /></Link>
+          <Link to={"#"} ><img src={linkedInIcon} alt="linkedInIcon" /></Link>
+          <Link to={"#"} ><img src={mailIcon} alt="mailIcon" /></Link>
         </div>
       </div>
     </div>

@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/galleryPage.css'
-import poster from "../Assets/galleryImages/image1.png"
 import image1 from "../Assets/galleryImages/image1.png"
 import event_1 from "../Assets/galleryImages/event_1.png"
 import event_8 from "../Assets/galleryImages/event_8.png"
@@ -140,12 +139,32 @@ function GalleryPage() {
 
   const [activetab, setactivetab] = useState("Social Events")
   const activeColor = "#0092CE"
+  const [shuffledImages, setShuffledImages] = useState([]);
 
   const getRandomWidth = () => {
     const minWidth = 20
     const maxWidth = 35
     return `${Math.floor(Math.random() * (maxWidth - minWidth + 1) + minWidth)}em`;
   };
+
+
+  useEffect(() => {
+    // Shuffle the imagePaths array when the component mounts
+    const shuffledArray = shuffleArray(imagePaths);
+    setShuffledImages(shuffledArray);
+  }, []);
+
+  // Function to shuffle the array
+  const shuffleArray = (array) => {
+    const newArray = array.slice();
+    for (let i = newArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+    }
+    return newArray;
+  };
+
+
 
   return (
     <div id='galleryPage'>
@@ -191,7 +210,7 @@ function GalleryPage() {
       {/* display gallery images */}
 
       <div className="galleryPageImages">
-        {imagePaths.map((poster, index) => (
+        {shuffledImages.map((poster, index) => (
           <div key={index} className="galleryPageImage" style={{ width: getRandomWidth() }}>
             <img src={poster.posterImage} alt={`galleryimg ${index}`} />
           </div>
@@ -203,3 +222,7 @@ function GalleryPage() {
 }
 
 export default GalleryPage
+
+
+
+

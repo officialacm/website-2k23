@@ -1,6 +1,5 @@
 import React from 'react'
 import "../styles/events.css"
-import codeQuestImg from "../Assets/eventPosters/codeQuest.png"
 import event_1 from "../Assets/eventPosters/event_1.png"
 import image_16 from "../Assets/galleryImages/image_16.jpg"
 import event_8 from "../Assets/eventPosters/event_8.png"
@@ -13,7 +12,7 @@ const eventData = [
     time: "9:15 AM",
     image: event_1,
     eventDesc: [
-      "The ACM club's technical event featured a challenging second round where participants engaged in a series of MCQs and coding exercises. Attendees showcased their proficiency in both theoretical concepts and practical coding skills, contributing to an intellectually stimulating and competitive atmosphere."
+      "The ACM club's technical event featured a challenging second round where participants engaged in a series of MCQs and coding exercises. Attendees showcased their proficiency in both theoretical concepts and practical coding skills."
     ],
     link: "#"
   },
@@ -87,15 +86,15 @@ export function EventCardStack() {
 
         <div className='EventCardStackDetailsCard'>
           {/* <p className='date'>{thisevent.date}</p> */}
-{/* <p className='date'>{thisevent.eventDesc}</p> */|
+          {/* <p className='date'>{thisevent.eventDesc}</p>  */}
           <span>
             {thisevent.eventDesc}
           </span>
 
-          <span className='formLink'>
+          {/* <span className='formLink'>
             <p>Free</p>
             <a href={thisevent.link}>Form Link 🔗</a>
-          </span>
+          </span> */}
 
         </div>
 
